@@ -1,6 +1,9 @@
 ---
 Name: opengraph
 ---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - OpenGraphSiteConfigExtension
 Page:
   extensions:
     - Kmedia\OpenGraph\OpenGraphExtension
