@@ -36,7 +36,7 @@ class OpenGraphExtension extends DataExtension
             ->setRightTitle('Ideal size: 1200px * 630px')
             ->getValidator()
             ->setAllowedExtensions(['png', 'jpeg', 'jpg', 'gif']);
-        $ogExtraMeta = TextareaField::create("OGExtraMeta", 'Custom Meta Tags');
+        $ogExtraMeta = TextareaField::create('OGExtraMeta', 'Custom Meta Tags');
         $ogExtraMeta->setRightTitle('HTML tags for additional meta information. For example <meta name="article:author" content="John Doe">');
         $fields->addFieldsToTab('Root.Main', [
             ToggleCompositeField::create('OpenGraph', 'Open Graph', [$ogTitle, $ogDescription, $ogType, $ogImage, $ogExtraMeta])->setHeadingLevel(4)
