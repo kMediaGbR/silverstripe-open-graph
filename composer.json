@@ -28,10 +28,5 @@
     "psr-4": {
       "Kmedia\\OpenGraph\\": "src/"
     }
-  },
-  "extra": {
-    "expose": [
-      "css"
-    ]
   }
 }

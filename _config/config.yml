@@ -3,7 +3,7 @@ Name: opengraph
 ---
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - OpenGraphSiteConfigExtension
+    - Kmedia\OpenGraph\OpenGraphSiteConfigExtension
 Page:
   extensions:
     - Kmedia\OpenGraph\OpenGraphExtension
