@@ -22,7 +22,7 @@ class OpenGraphExtension extends DataExtension
         $ogImage->getValidator()->setAllowedExtensions(['png', 'jpeg', 'jpg', 'gif']);
 
         $fields->addFieldsToTab('Root.Main', [
-            ToggleCompositeField::create([$ogImage])->setHeadingLevel(4)
+            ToggleCompositeField::create('OpenGraph', 'OpenGraph', [$ogImage])->setHeadingLevel(4)
         ]);
     }
 }
