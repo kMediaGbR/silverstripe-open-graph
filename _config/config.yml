@@ -1,0 +1,7 @@
+---
+Name: opengraph
+---
+Page:
+  extensions:
+    - Kmedia\OpenGraph\OpenGraphExtension
+---

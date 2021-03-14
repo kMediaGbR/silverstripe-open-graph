@@ -1,0 +1,37 @@
+{
+  "name": "kmedia/silverstripe-open-graph",
+  "description": "An extension for open graph meta tags",
+  "type": "silverstripe-vendormodule",
+  "keywords": [
+    "silverstripe",
+    "extension",
+    "CMS"
+  ],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Sebastian Kalicki",
+      "email": "s.kalicki@kmedia.email",
+      "homepage": "http://kmedia.rocks",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/kMediaGbR/silverstripe-open-graph/issues"
+  },
+  "require": {
+    "silverstripe/cms": "^4.5",
+    "silverstripe/framework": "^4.5",
+    "silverstripe/asset-admin": "^1.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kmedia\\OpenGraph\\": "src/"
+    }
+  },
+  "extra": {
+    "expose": [
+      "css"
+    ]
+  }
+}
