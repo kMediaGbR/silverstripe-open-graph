@@ -2,6 +2,7 @@
 
 namespace Kmedia\OpenGraph;
 
+use Intervention\Image\Image;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\DataExtension;
@@ -9,7 +10,7 @@ use SilverStripe\ORM\DataExtension;
 class OpenGraphSiteConfigExtension extends DataExtension
 {
     private static $has_one = [
-        'DefaultOpenGraphImage' => 'Image'
+        'DefaultOpenGraphImage' => Image::class
     ];
 
     public function updateCMSFields(FieldList $fields)
