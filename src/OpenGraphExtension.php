@@ -61,8 +61,8 @@ class OpenGraphExtension extends DataExtension
                     $tags .= $this->getImageMetaTags($image);
                 }
             }
-        } else if ($siteConfig->DefaultOpenGraphImage() && $siteConfig->DefaultOpenGraphImage()->exists()) {
-            $tags .= $this->getImageMetaTags($siteConfig->DefaultOpenGraphImage());
+        } else if ($siteConfig->OpenGraphDefaultImage() && $siteConfig->OpenGraphDefaultImage()->exists()) {
+            $tags .= $this->getImageMetaTags($siteConfig->OpenGraphDefaultImage());
         }
 
         if (trim($this->owner->OGExtraMeta)) {

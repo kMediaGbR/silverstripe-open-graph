@@ -2,34 +2,28 @@
 
 namespace Kmedia\OpenGraph;
 
+use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Assets\Image;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\Forms\GridField\GridField;
-use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
+use SilverStripe\Forms\HeaderField;
+use SilverStripe\Forms\TabSet;
 use SilverStripe\ORM\DataExtension;
 
 class OpenGraphSiteConfigExtension extends DataExtension
 {
-    private static $has_many = [
-        'OpenGraphDefaultImages' => OpenGraphDefaultImage::class
+    private static $has_one = [
+        'OpenGraphDefaultImage' => Image::class,
     ];
 
     public function updateCMSFields(FieldList $fields)
     {
-        $config = GridFieldConfig_RelationEditor::create();
-        $fields->addFieldToTab('Root.OpenGraph',
-            GridField::create('OpenGraphsImages', 'OpenGraph Image', $this->owner->OpenGraphDefaultImages(), $config));
+        if (!$fields->fieldByName('Root.Metadata')) {
+            $fields->addFieldToTab('Root', TabSet::create('Metadata'));
+        }
 
-        parent::updateCMSFields($fields);
-    }
-
-    /*private static $has_one = [
-        'DefaultOpenGraphImage' => Image::class
-    ];
-
-    public function updateCMSFields(FieldList $fields)
-    {
-        $fields->addFieldsToTab('Root.OpenGraph', [
-            UploadField::create('DefaultOpenGraphImage')
+        $fields->addFieldsToTab('Root.Metadata.OpenGraph', [
+            HeaderField::create('', 'Open Graph'),
+            UploadField::create('OpenGraphDefaultImage', 'Default Image')
         ]);
-    }*/
+    }
 }
