@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79ee775f057d2fc7cadb4830966ca8a6",
+    "content-hash": "dbc09983352b41ee75261ebc770d3716",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -972,69 +972,6 @@
                 }
             ],
             "time": "2020-12-14T12:56:38+00:00"
-        },
-        {
-            "name": "moo/hasoneselector",
-            "version": "2.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/satrun77/silverstripe-hasoneselector.git",
-                "reference": "3c461d22d4888bfcff08d3bd209bd29fd0262a31"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/satrun77/silverstripe-hasoneselector/zipball/3c461d22d4888bfcff08d3bd209bd29fd0262a31",
-                "reference": "3c461d22d4888bfcff08d3bd209bd29fd0262a31",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4.1",
-                "silverstripe/vendor-plugin": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "silverstripe/versioned": "^1"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "client"
-                ],
-                "installer-name": "hasoneselector"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Moo\\HasOneSelector\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mohamed Alsharaf",
-                    "email": "mohamed.alsharaf@gmail.com",
-                    "homepage": "http://my.geek.nz",
-                    "role": "Developer"
-                }
-            ],
-            "description": "This module provides CMS field to manage data object defined in a has_one relation.",
-            "homepage": "https://github.com/satrun77/silverstripe-hasoneselector",
-            "keywords": [
-                "Forms",
-                "cms",
-                "cwp",
-                "formfield",
-                "gridfield",
-                "has_one",
-                "silverstripe"
-            ],
-            "support": {
-                "issues": "https://github.com/satrun77/silverstripe-hasoneselector/issues",
-                "source": "https://github.com/satrun77/silverstripe-hasoneselector/tree/2.3.4"
-            },
-            "time": "2020-07-17T04:56:32+00:00"
         },
         {
             "name": "nikic/php-parser",
